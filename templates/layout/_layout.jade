@@ -1,0 +1,48 @@
+include ../mixins/_all
+
+doctype
+html
+	head
+		meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(property="og:type", content="website")
+		meta(property="og:url", content="url")
+		meta(property="og:image", content="url")
+		meta(property="og:description", content="Trumpet Hero")
+		meta(name='twitter:title', content='Trumpet Hero')
+		meta(name='twitter:description', content='Trumpet Hero')
+		meta(name='keywords', content='keywords')
+		meta(name='description', content='description')
+		title="Trumpet Hero"
+
+		block css
+			if debug
+				link(rel="stylesheet", type="text/css", href="./dist/css/style.css")
+			else
+				link(rel="stylesheet", type="text/css", href="./dist/css/style.min.css")
+
+		script(src='//use.typekit.net/xln4utk.js')
+		script.
+			try{Typekit.load();}catch(e){}
+		| <!--[if lt IE 9]>
+		| <script src="assets/scripts/html5shiv.min.js"></script>
+		| <script src="assets/scripts/respond.min.js"></script>
+		| <![endif]-->
+
+	body
+		block layout
+			
+
+		block js
+			if debug
+				script(src="http://192.168.128.80:8080/webpack-dev-server.js")
+				script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+				script(src="http://192.168.128.80:8080/dist/js/app.js")
+			else
+				script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+				script(src="./dist/js/app.js")
+
+
+
+

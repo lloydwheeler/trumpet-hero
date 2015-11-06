@@ -1,0 +1,20 @@
+{
+  "name": "Active IQ",
+  "version": "0.0.0",
+  "authors": [
+    "Lloyd Wheeler <lloyd.wheeler@sequence.co.uk>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "neat": "~1.7.2",
+    "typeplate-starter-kit": "~2.1.0"
+  }
+}
