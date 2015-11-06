@@ -18,6 +18,23 @@
 // 	this.component = new Component($element);
 // });
 
-import 'WebMIDIAPI.min';
+import 'web-midi-api/WebMIDIAPI.min.js';
 
-navigator.requestMIDIAccess().then(onFulFilled, onRejected);
+
+class Main {
+
+	constructor() {
+		navigator.requestMIDIAccess().then(this.onFulFilled, this.onRejected);
+	}
+
+	onFulFilled() {
+		console.log('supported');
+	}
+
+	onRejected() {
+		console.log('rejected');
+	}
+}
+
+
+
