@@ -17,3 +17,7 @@
 	
 // 	this.component = new Component($element);
 // });
+
+import 'WebMIDIAPI.min';
+
+navigator.requestMIDIAccess().then(onFulFilled, onRejected);
