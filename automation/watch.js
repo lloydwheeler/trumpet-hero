@@ -20,17 +20,6 @@ module.exports = {
 			interrupt: true,
 			livereload: true
 		}
-	},
-
-	webfont: {
-		cwd: "./webfont",
-		files: ['**/*.svg'],
-		tasks: ['iconfont'],
-		options: {
-			spawn: false,
-			interrupt: true,
-			livereload: true
-		}
 	}
 
 };
